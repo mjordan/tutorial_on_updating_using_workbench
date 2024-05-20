@@ -36,10 +36,36 @@ We also need to create a collection node, which we will use in an exercise later
 
 First, "duplicate" the "update task" worksheet in the Google Sheet, labeling it with your name. After you modify this duplicated worksheet, you will use it as the input for your practice run of the "update" task.
 
+```
+task: update
+host: https://islandora.traefik.me
+username: admin
+password: password
+input_csv: https://docs.google.com/spreadsheets/d/1nFwY-y5w0ljyvf510r4zX-ATnD7Oso3DhKERdblhcSY/edit
+allow_adding_terms: true
 
+google_sheets_gid: 1016713769
+```
 
 
 ### Replacing files
+
+We will replace the thumbnail image for two of our nodes with this one:
+
+![Pictures of several kinds of cats](https://raw.githubusercontent.com/mjordan/tutorial_on_updating_using_workbench/main/images/cats_tn.jpg)
+
+
+```
+task: update_media
+host: https://islandora.traefik.me
+username: admin
+password: password
+input_csv: https://docs.google.com/spreadsheets/d/1nFwY-y5w0ljyvf510r4zX-ATnD7Oso3DhKERdblhcSY/edit?usp=sharing
+standalone_media_url: true
+media_type: image
+
+google_sheets_gid: 609339107
+```
 
 
 ## Thank you
