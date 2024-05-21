@@ -32,7 +32,7 @@ google_sheets_gid: 0
 
 ### 1. Updating node fields
 
-First, duplicate the "update task" worksheet in the Google Sheet, labeling it with your name. After you modify this duplicated worksheet, you will use it as the input for your practice run of the `update` task.
+First, duplicate the "update task" worksheet in the Google Sheet, labeling it with your name. , You will use this worksheet as the input for running the following `update` task.
 
 ```
 task: update
@@ -46,7 +46,11 @@ allow_adding_terms: true
 google_sheets_gid: 1016713769
 ```
 
-### 2. Replacing files
+### 2. More updating node fields
+
+We will look at the field structure of the Repository Item content type together, and then you will add some new columns to your worksheet and update your nodes using your own metadata values.
+
+### 3. Replacing files
 
 We will replace the thumbnail image for two of our nodes with this one:
 
