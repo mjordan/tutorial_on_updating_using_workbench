@@ -50,6 +50,8 @@ google_sheets_gid: 1016713769
 
 We will look at the field structure of the Repository Item content type together, and then you will add some new columns to your worksheet and update your nodes using your own metadata values.
 
+For this exercise, let's append values to fields rather than replace the values. To do this, we need to add `update_mode: append` to our configuration files.
+
 ### 3. Replacing files
 
 We will replace the thumbnail image for two of our nodes with this one:
