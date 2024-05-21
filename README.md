@@ -15,7 +15,7 @@ Sample data, and instances of Islandora, will be provided.
 
 Before we start practicing updates to content, we need to create some nodes and media we will later update.
 
-Copy the following configuration file and save it in your "islandora_workbench" directory with the name "tutorial_create.yml". You may need to change the "host", "username", and "password" settings.
+Copy the following configuration file and save it in your "islandora_workbench" directory with the name "tutorial_create.yml". You may need to change the `host`, `username`, and `password` settings.
 
 ```
 task: create
@@ -28,13 +28,11 @@ allow_adding_terms: true
 google_sheets_gid: 0
 ```
 
-We also need to create a collection node, which we will use in an exercise later. We do this manually, without using Islandora Workbench.
+## Follow along exercises
 
-## Exercises
+### 1. Updating node fields
 
-### Updating node fields
-
-First, "duplicate" the "update task" worksheet in the Google Sheet, labeling it with your name. After you modify this duplicated worksheet, you will use it as the input for your practice run of the "update" task.
+First, duplicate the "update task" worksheet in the Google Sheet, labeling it with your name. After you modify this duplicated worksheet, you will use it as the input for your practice run of the `update` task.
 
 ```
 task: update
@@ -44,11 +42,11 @@ password: password
 input_csv: https://docs.google.com/spreadsheets/d/1nFwY-y5w0ljyvf510r4zX-ATnD7Oso3DhKERdblhcSY/edit
 allow_adding_terms: true
 
+# Your GID will be different than this one.
 google_sheets_gid: 1016713769
 ```
 
-
-### Replacing files
+### 2. Replacing files
 
 We will replace the thumbnail image for two of our nodes with this one:
 
@@ -64,9 +62,16 @@ input_csv: https://docs.google.com/spreadsheets/d/1nFwY-y5w0ljyvf510r4zX-ATnD7Os
 standalone_media_url: true
 media_type: image
 
+# We can all use the same GID for this exercise.
 google_sheets_gid: 609339107
 ```
 
+## On your own (or with a partner) exercises
+
+1. Create a collection node (manually, via Drupal's admin GUI is OK) and use Workbench to add some existing nodes to it. Hint: the member nodes need to have the collection's node ID in their `field_member_of`.
+1. Use Workbencbh to set the publication status of a couple of nodes to unpublished. Hint: the column in your CSV should be named `published`, which takes either a `1` or `0` value.
+   * If you have time, you may want to unpublish the nodes' media as well. This can be done via an `update_media` task.
+1. Use an `add_media` task ([docs](https://mjordan.github.io/islandora_workbench_docs/adding_media/)) to add a text file media to a couple of nodes, assigning the media use term "Extracted text".
 
 ## Thank you
 
