@@ -28,11 +28,15 @@ allow_adding_terms: true
 google_sheets_gid: 0
 ```
 
+Then, run Workbench using this configuration file: `./workbench --config tutorial_create.yml --check`
+
+If `--check` doesn't identify any significant issues, rerun Workbench without the `--check` option.
+
 ## Follow along exercises
 
 ### 1. Updating node fields
 
-First, duplicate the "update task" worksheet in the Google Sheet, labeling it with your name. , You will use this worksheet as the input for running the following `update` task.
+First, duplicate the "update task" worksheet in the Google Sheets, labeling it with your name. You will use this worksheet as the input for running the following `update` task. Your config file will look like thisw (with your host, username, and password instead of the values below):
 
 ```
 task: update
@@ -46,11 +50,18 @@ allow_adding_terms: true
 google_sheets_gid: 1016713769
 ```
 
+Save the config file in your islandora_workbench directory as "tutorial_exercise_1.yml". Note that your worksheet will have its own "gid" in the URL. You will need to register that value in your config file's `google_sheets_gid` setting. Once your config file is ready, run:
+
+`./workbench --config tutorial_exercise_1.yml --check`
+
+
 ### 2. More updating node fields
 
 We will look at the field structure of the Repository Item content type together, and then you will add some new columns to your worksheet and update your nodes using your own metadata values.
 
 For this exercise, let's append values to fields rather than replace the values. To do this, we need to add `update_mode: append` to our configuration files.
+
+Since you are working in your own worksheet, you don't need to modify your configuration file. All you need to do is run `./workbench --config tutorial_create.yml --check`.
 
 ### 3. Replacing files
 
