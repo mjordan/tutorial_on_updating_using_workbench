@@ -84,8 +84,7 @@ We will replace the thumbnail image for two of our nodes with this one:
 
 ![Pictures of several kinds of cats](https://raw.githubusercontent.com/mjordan/tutorial_on_updating_using_workbench/main/images/cats_tn.jpg)
 
-Note that we are only replacing the file, not the entire media. This file remains a "thumbnail" image due to its media having that Islandora Media Use value. If we wanted to add a thumbnail media to a node that didn't have one, we would use a `add_media` task. Save the following config file in your islandora_workbench directory as "tutorial_exercise_replace_thumbnails.yml" (with your own `host`, `username`, and `password` values):
-
+Save the following config file in your islandora_workbench directory as "tutorial_exercise_replace_thumbnails.yml" (with your own `host`, `username`, and `password` values):
 
 ```
 task: update_media
@@ -99,6 +98,8 @@ media_type: image
 # We should all use the same GID for this exercise.
 google_sheets_gid: 609339107
 ```
+
+Note that we are only replacing the file, not the entire media. This file remains a "thumbnail" image due to its media having that Islandora Media Use value. If we wanted to add a thumbnail media to a node that didn't have one, we would use a `add_media` task.
 
 ## Bonus on-your-own (or with-a-partner) exercises
 
