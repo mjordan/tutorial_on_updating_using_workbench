@@ -67,7 +67,7 @@ Then, if `--check` didn't report anything important, run:
 > [!NOTE]
 > Learning outcomes of this exercise: Building on the last exercise, you will 1) provide the metadata to be added to your nodes and 2) append values to existing fields rather than replace field values.
 
-To start this exercise, we will look at the field structure of the Repository Item content type together, and then you will add some new columns to your worksheet and update your nodes using your own metadata values.
+To start this exercise, we will look at the field structure of the Repository Item content type together, and then you will add some new columns to your worksheet and update your nodes using your own metadata values. The "Manage Fields" list for the Repository Item content type is at `/admin/structure/types/manage/islandora_object/fields`.
 
 For this exercise, let's append values to fields rather than replace the values. To do this, we need to add `update_mode: append` to our configuration files.
 
