@@ -2,7 +2,7 @@
 
 ## Overview and goals
 
-During this 1.5 hour session, you will gain experience using Islandora Workbench to update your repository's content. After spending some time preparing your CSV and media files, you will move on to running Workbench to apply those changes to existing nodes and media.
+During this 1.5 hour session, you will gain experience using Islandora Workbench to update your repository's content. Each exercise below defines a specific learning outcome, and at the end of the tutorial, you will have experience updating nodes and media.
 
 ## Prerequisites
 
