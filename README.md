@@ -2,7 +2,7 @@
 
 ## Overview and goals
 
-During this 1.5 hour session, you will gain experience using Islandora Workbench to update your repository's content. Each follow-along exercise below defines a specific learning outcome, and there are some bonus exercises to complete as well. At the end of the tutorial, you will have experience updating nodes and media.
+During this 1.5 hour session, you will gain experience using Islandora Workbench to update your repository's content. Each follow-along exercise below defines one or more specific learning outcomes, and there are some bonus exercises to complete as well. At the end of the tutorial, you will be ready to use Workbench to update  nodes and media in your own Islandora repository.
 
 ## Prerequisites
 
@@ -36,9 +36,9 @@ If `--check` doesn't identify any significant issues, rerun Workbench without th
 
 ### 1. Updating node fields
 
-> Outcome of this exercise: run a simple `update` task using provided CSV values.
+> Learning outcomes of this exercise: 1) using the `google_sheets_gid` config setting, and 2) running a simple `update` task using provided CSV values.
 
-First, duplicate the "update task" worksheet in the Google Sheets, labeling it with your name. You will use this worksheet as the input for running the following `update` task. Your config file will look like thisw (with your host, username, and password instead of the values below):
+First, duplicate the "update task" worksheet in the Google Sheets, labeling it with your name. You will use this worksheet as the input for running the following `update` task. Your config file will look like this (with your `host`, `username`, and `password` instead of the values below):
 
 ```
 task: update
@@ -63,7 +63,7 @@ Then, if `--check` didn't report anything important, run:
 
 ### 2. More updating node fields
 
-> Outcomes of this exercise: Building on the last exercise, you will 1) provide the metadata to be added to your nodes and 2) append metadata to existing fields rather than replace field data.
+> Learning outcomes of this exercise: Building on the last exercise, you will 1) provide the metadata to be added to your nodes and 2) append metadata to existing fields rather than replace field data.
 
 To start this exercise, we will look at the field structure of the Repository Item content type together, and then you will add some new columns to your worksheet and update your nodes using your own metadata values.
 
@@ -73,7 +73,7 @@ Since you are working in your own worksheet, you don't need to modify your confi
 
 ### 3. Replacing files
 
-> Outcome of this exercise: Replace some thumbnail files.
+> Learning outcome of this exercise: Replace some thumbnail files.
 
 We will replace the thumbnail image for two of our nodes with this one:
 
