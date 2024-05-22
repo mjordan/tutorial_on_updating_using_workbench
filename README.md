@@ -36,6 +36,8 @@ If `--check` doesn't identify any significant issues, rerun Workbench without th
 
 ### 1. Updating node fields
 
+> Outcome of this exercise: run a simple `update` task using provided CSV values.
+
 First, duplicate the "update task" worksheet in the Google Sheets, labeling it with your name. You will use this worksheet as the input for running the following `update` task. Your config file will look like thisw (with your host, username, and password instead of the values below):
 
 ```
@@ -54,16 +56,24 @@ Save the config file in your islandora_workbench directory as "tutorial_exercise
 
 `./workbench --config tutorial_exercise_1.yml --check`
 
+Then, if `--check` didn't report anything important, run:
+
+`./workbench --config tutorial_exercise_1.yml`
+
 
 ### 2. More updating node fields
 
-We will look at the field structure of the Repository Item content type together, and then you will add some new columns to your worksheet and update your nodes using your own metadata values.
+> Outcome of this exercise: Building on the last exercise, you will p1) rovide the metadata to be added to your nodes and 2) append metadata to existing fields rather than replace field data.
+
+To start this exercise, we will look at the field structure of the Repository Item content type together, and then you will add some new columns to your worksheet and update your nodes using your own metadata values.
 
 For this exercise, let's append values to fields rather than replace the values. To do this, we need to add `update_mode: append` to our configuration files.
 
 Since you are working in your own worksheet, you don't need to modify your configuration file. All you need to do is run `./workbench --config tutorial_create.yml --check`.
 
 ### 3. Replacing files
+
+> Outcome of this exercise: Replace some thumbnail files.
 
 We will replace the thumbnail image for two of our nodes with this one:
 
