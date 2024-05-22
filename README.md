@@ -16,10 +16,10 @@ Sample data, and instances of Islandora, will be provided.
 #### The input data for this tutorial
 
 ```mermaid
-stateDiagram-v2
-    s1: "Your computer running Workbench" --> s2: "Google Sheet"
-    s2: "Google Sheet" --> s3: "Images in this repo's `images` directory"
-    s3: "Images in this repo's `images` directory" --> s4: "Your Islandora instance"
+graph LR
+    A[Your computer running Workbench] --> B[Google Sheet]
+    B[Google Sheet] --> C[Images in this repo's `images` directory]
+    C[Images in this repo's `images` directory] --> D[Your Islandora instance]
 ```
 
 #### Creating content to update
