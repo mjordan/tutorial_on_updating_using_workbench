@@ -17,9 +17,9 @@ Sample data, and instances of Islandora, will be provided.
 
 ```mermaid
 stateDiagram-v2
-    state "Your computer running Workbench" --> state "Google Sheet"
-    state "Google Sheet" --> state "Images in this repo's `images` directory"
-    state "Images in this repo's `images` directory" --> state "Your Islandora instance"
+    s1: "Your computer running Workbench" --> s2: "Google Sheet"
+    s2: "Google Sheet" --> s3: "Images in this repo's `images` directory"
+    s3: "Images in this repo's `images` directory" --> s4: "Your Islandora instance"
 ```
 
 #### Creating content to update
