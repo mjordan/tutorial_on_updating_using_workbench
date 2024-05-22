@@ -13,17 +13,6 @@ Sample data, and instances of Islandora, will be provided.
 
 ## Setup
 
-#### The input data for this tutorial
-
-```mermaid
-graph TB
-    A[Your computer running Workbench] --> B[Google Sheet]
-    B[Google Sheet] --> C[Images in this repo's "images" directory]
-    C[Images in this repo's "images" directory] --> D[Your Islandora instance]
-```
-
-#### Creating content to update
-
 Before we start practicing updates to content, we need to create some nodes and media we will later update.
 
 Copy the following configuration file and save it in your "islandora_workbench" directory with the name "tutorial_create.yml". You may need to change the `host`, `username`, and `password` settings.
