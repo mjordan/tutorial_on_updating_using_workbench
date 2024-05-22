@@ -53,7 +53,7 @@ allow_adding_terms: true
 google_sheets_gid: 1016713769
 ```
 
-Save the config file in your islandora_workbench directory as "tutorial_exercise_1.yml". Note that your worksheet will have its own "gid" in the URL. You will need to register that value in your config file's `google_sheets_gid` setting. Once your config file is ready, run:
+Save the config file in your islandora_workbench directory as "tutorial_exercise_1_2.yml". Note that your worksheet will have its own "gid" in the URL. You will need to register that value in your config file's `google_sheets_gid` setting. Once your config file is ready, run:
 
 `./workbench --config tutorial_exercise_1.yml --check`
 
@@ -71,7 +71,7 @@ To start this exercise, we will look at the field structure of the Repository It
 
 For this exercise, let's append values to fields rather than replace the values. To do this, we need to add `update_mode: append` to our configuration files.
 
-Since you are working in your own worksheet, you don't need to modify your configuration file. All you need to do is run `./workbench --config tutorial_create.yml --check`.
+Since you are working in your own worksheet, you don't need to modify your configuration file. All you need to do is run `./workbench --config tutorial_exercise_1_2.yml --check`.
 
 ### 3. Replacing files
 
@@ -82,7 +82,7 @@ We will replace the thumbnail image for two of our nodes with this one:
 
 ![Pictures of several kinds of cats](https://raw.githubusercontent.com/mjordan/tutorial_on_updating_using_workbench/main/images/cats_tn.jpg)
 
-Note that we are only replacing the file, not the entire media. This file remains a "thumbnail" image due to its media having that Islandora Media Use value. If we wanted to add a thumbnail media to a node that didn't have one, we would use a `add_media` task.
+Note that we are only replacing the file, not the entire media. This file remains a "thumbnail" image due to its media having that Islandora Media Use value. If we wanted to add a thumbnail media to a node that didn't have one, we would use a `add_media` task. Save the following config file in your islandora_workbench directory as "tutorial_exercise_replace_thumbnails.yml" (with your own `host`, `username`, and `password` values):
 
 
 ```
@@ -101,7 +101,7 @@ google_sheets_gid: 609339107
 ## Bonus on-your-own (or with-a-partner) exercises
 
 1. Create a collection node (manually, via Drupal's admin GUI is probably easiest) and use Workbench to add some existing nodes to it. Hint: the member nodes need to have the collection's node ID in their `field_member_of`.
-1. Use Workbench to set the publication status of a couple of nodes to unpublished. Hint: the column in your CSV should be named `published`, which takes either a `1` or `0` value.
+1. Use Workbench to set the publication status of a couple of nodes to unpublished. Hint: the column in your CSV should be named `published`, which takes either a `1` (published) or `0` (unpublished) value.
    * If you have time, you may want to unpublish the nodes' media as well. This can be done via an `update_media` task ([docs](https://mjordan.github.io/islandora_workbench_docs/updating_media/)).
 1. Use an `add_media` task ([docs](https://mjordan.github.io/islandora_workbench_docs/adding_media/)) to add a text file media to a couple of nodes, assigning the media use term "Extracted text".
 
