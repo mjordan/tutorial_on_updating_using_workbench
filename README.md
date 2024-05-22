@@ -7,7 +7,7 @@ During this 1.5 hour session, you will gain experience using Islandora Workbench
 ## Prerequisites
 
 - some experience using Islandora Workbench (doesn't matter what type of tasks) - important thing is that you know what configuration files are, what `--check` does, and that you're comfortable with the command line
-- a working instance of Islandora Workbench on your computer (the more recent the better)
+- a working installation of Islandora Workbench on your computer (the more recent the better)
 
 Sample data, and instances of Islandora, will be provided.
 
@@ -95,15 +95,11 @@ google_sheets_gid: 609339107
 
 ## Bonus on your own (or with a partner) exercises
 
-1. Create a collection node (manually, via Drupal's admin GUI is OK) and use Workbench to add some existing nodes to it. Hint: the member nodes need to have the collection's node ID in their `field_member_of`.
+1. Create a collection node (manually, via Drupal's admin GUI is probably easiest) and use Workbench to add some existing nodes to it. Hint: the member nodes need to have the collection's node ID in their `field_member_of`.
 1. Use Workbench to set the publication status of a couple of nodes to unpublished. Hint: the column in your CSV should be named `published`, which takes either a `1` or `0` value.
-   * If you have time, you may want to unpublish the nodes' media as well. This can be done via an `update_media` task.
+   * If you have time, you may want to unpublish the nodes' media as well. This can be done via an `update_media` task (docs[https://mjordan.github.io/islandora_workbench_docs/updating_media/]).
 1. Use an `add_media` task ([docs](https://mjordan.github.io/islandora_workbench_docs/adding_media/)) to add a text file media to a couple of nodes, assigning the media use term "Extracted text".
 
 ## Thank you
 
 Thanks to Amy Blau for helping organize this tutorial, and to Rosie Le Faive for setting up the Islandora instances.
-
-
-
-
