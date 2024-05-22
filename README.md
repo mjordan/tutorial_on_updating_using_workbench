@@ -16,10 +16,10 @@ Sample data, and instances of Islandora, will be provided.
 #### The input data for this tutorial
 
 ```mermaid
-graph LR
+graph TB
     A[Your computer running Workbench] --> B[Google Sheet]
-    B[Google Sheet] --> C[Images in this repo's `images` directory]
-    C[Images in this repo's `images` directory] --> D[Your Islandora instance]
+    B[Google Sheet] --> C[Images in this repo's "images" directory]
+    C[Images in this repo's "images" directory] --> D[Your Islandora instance]
 ```
 
 #### Creating content to update
