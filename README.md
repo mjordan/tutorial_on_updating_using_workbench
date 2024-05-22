@@ -63,7 +63,7 @@ Then, if `--check` didn't report anything important, run:
 
 ### 2. More updating node fields
 
-> Learning outcomes of this exercise: Building on the last exercise, you will 1) provide the metadata to be added to your nodes and 2) append metadata to existing fields rather than replace field data.
+> Learning outcomes of this exercise: Building on the last exercise, you will 1) provide the metadata to be added to your nodes and 2) append values to existing fields rather than replace field values.
 
 To start this exercise, we will look at the field structure of the Repository Item content type together, and then you will add some new columns to your worksheet and update your nodes using your own metadata values.
 
@@ -89,7 +89,7 @@ input_csv: https://docs.google.com/spreadsheets/d/1nFwY-y5w0ljyvf510r4zX-ATnD7Os
 standalone_media_url: true
 media_type: image
 
-# We can all use the same GID for this exercise.
+# We should all use the same GID for this exercise.
 google_sheets_gid: 609339107
 ```
 
