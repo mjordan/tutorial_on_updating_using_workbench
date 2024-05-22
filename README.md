@@ -62,7 +62,7 @@ Then, if `--check` didn't report anything important, run:
 `./workbench --config tutorial_exercise_1.yml`
 
 
-### 2. More updating node fields
+### 2. Adding more columns to your CSV file
 
 > [!NOTE]
 > Learning outcomes of this exercise: Building on the last exercise, you will 1) provide the metadata to be added to your nodes and 2) append values to existing fields rather than replace field values.
@@ -81,6 +81,8 @@ Since you are working in your own worksheet, you don't need to modify your confi
 We will replace the thumbnail image for two of our nodes with this one:
 
 ![Pictures of several kinds of cats](https://raw.githubusercontent.com/mjordan/tutorial_on_updating_using_workbench/main/images/cats_tn.jpg)
+
+Note that we are only replacing the file, not the entire media. This file remains a "thumbnail" image due to its media having that Islandora Media Use value. If we wanted to add a thumbnail media to a node that didn't have one, we would use a `add_media` task.
 
 
 ```
