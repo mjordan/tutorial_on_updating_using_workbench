@@ -63,7 +63,7 @@ Then, if `--check` didn't report anything important, run:
 
 ### 2. More updating node fields
 
-> Outcome of this exercise: Building on the last exercise, you will p1) rovide the metadata to be added to your nodes and 2) append metadata to existing fields rather than replace field data.
+> Outcomes of this exercise: Building on the last exercise, you will 1) provide the metadata to be added to your nodes and 2) append metadata to existing fields rather than replace field data.
 
 To start this exercise, we will look at the field structure of the Repository Item content type together, and then you will add some new columns to your worksheet and update your nodes using your own metadata values.
 
@@ -96,7 +96,7 @@ google_sheets_gid: 609339107
 ## On your own (or with a partner) exercises
 
 1. Create a collection node (manually, via Drupal's admin GUI is OK) and use Workbench to add some existing nodes to it. Hint: the member nodes need to have the collection's node ID in their `field_member_of`.
-1. Use Workbencbh to set the publication status of a couple of nodes to unpublished. Hint: the column in your CSV should be named `published`, which takes either a `1` or `0` value.
+1. Use Workbench to set the publication status of a couple of nodes to unpublished. Hint: the column in your CSV should be named `published`, which takes either a `1` or `0` value.
    * If you have time, you may want to unpublish the nodes' media as well. This can be done via an `update_media` task.
 1. Use an `add_media` task ([docs](https://mjordan.github.io/islandora_workbench_docs/adding_media/)) to add a text file media to a couple of nodes, assigning the media use term "Extracted text".
 
