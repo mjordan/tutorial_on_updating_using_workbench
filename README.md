@@ -16,7 +16,8 @@ Sample data, and instances of Islandora, will be provided.
 #### The input data for this tutorial
 
 ```mermaid
-Your computer running Workbench-->Google Sheet-->Images in this repo's `images` directory-->Your Islandora instance
+graph TD;
+    Your computer running Workbench-->Google Sheet-->Images in this repo's `images` directory-->Your Islandora instance
 ```
 
 #### Creating content to update
