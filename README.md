@@ -17,7 +17,7 @@ Sample data, and instances of Islandora, will be provided.
 
 ```mermaid
 flowchart LR
-    id1(Your computer running Workbench) --> id2(Google Sheet) --> id3(Images in this repo's `images` directory) --> id4(Your Islandora instance)
+    markdown["Your computer running Workbench"] --> id(Google Sheet) --> markdown["Images in this repo's `images` directory"] --> id(Your Islandora instance)
 ```
 
 #### Creating content to update
