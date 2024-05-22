@@ -2,7 +2,7 @@
 
 ## Overview and goals
 
-During this 1.5 hour session, you will gain experience using Islandora Workbench to update your repository's content. Each exercise below defines a specific learning outcome, and at the end of the tutorial, you will have experience updating nodes and media.
+During this 1.5 hour session, you will gain experience using Islandora Workbench to update your repository's content. Each follow-along exercise below defines a specific learning outcome, and there are some bonus exercises to complete as well. At the end of the tutorial, you will have experience updating nodes and media.
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ Then, run Workbench using this configuration file: `./workbench --config tutoria
 
 If `--check` doesn't identify any significant issues, rerun Workbench without the `--check` option.
 
-## Follow along exercises
+## Follow-along exercises
 
 ### 1. Updating node fields
 
@@ -93,7 +93,7 @@ media_type: image
 google_sheets_gid: 609339107
 ```
 
-## On your own (or with a partner) exercises
+## Bonus on your own (or with a partner) exercises
 
 1. Create a collection node (manually, via Drupal's admin GUI is OK) and use Workbench to add some existing nodes to it. Hint: the member nodes need to have the collection's node ID in their `field_member_of`.
 1. Use Workbench to set the publication status of a couple of nodes to unpublished. Hint: the column in your CSV should be named `published`, which takes either a `1` or `0` value.
