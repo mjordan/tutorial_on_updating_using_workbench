@@ -97,7 +97,7 @@ google_sheets_gid: 609339107
 
 1. Create a collection node (manually, via Drupal's admin GUI is probably easiest) and use Workbench to add some existing nodes to it. Hint: the member nodes need to have the collection's node ID in their `field_member_of`.
 1. Use Workbench to set the publication status of a couple of nodes to unpublished. Hint: the column in your CSV should be named `published`, which takes either a `1` or `0` value.
-   * If you have time, you may want to unpublish the nodes' media as well. This can be done via an `update_media` task ([docs](https://mjordan.github.io/islandora_workbench_docs/updating_media/]).
+   * If you have time, you may want to unpublish the nodes' media as well. This can be done via an `update_media` task ([docs](https://mjordan.github.io/islandora_workbench_docs/updating_media/)).
 1. Use an `add_media` task ([docs](https://mjordan.github.io/islandora_workbench_docs/adding_media/)) to add a text file media to a couple of nodes, assigning the media use term "Extracted text".
 
 ## Thank you
