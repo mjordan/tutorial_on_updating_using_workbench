@@ -17,7 +17,7 @@ Sample data, and instances of Islandora, will be provided.
 
 ```mermaid
 flowchart LR
-    "Your computer running Workbench" --> "Google Sheet" --> "Images in this repo's `images` directory" --> "Your Islandora instance"
+    A("Your computer running Workbench") --> B("Google Sheet") --> C("Images in this repo's `images` directory") --> D("Your Islandora instance")
 ```
 
 #### Creating content to update
