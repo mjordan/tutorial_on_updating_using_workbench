@@ -1,8 +1,10 @@
 # Hands-on tutorial on using Islandora Workbench to update content in your repository
 
-## Overview and goals
+## Overview
 
-During this 1.5 hour session, you will gain experience using Islandora Workbench to update your repository's content. Each follow-along exercise below defines one or more specific learning outcomes, and there are some bonus exercises to complete as well. At the end of the tutorial, you will be ready to use Workbench to update  nodes and media in your own Islandora repository.
+During this 1.5 hour session, you will gain experience using Islandora Workbench to update your repository's content. Each follow-along exercise below defines one or more specific learning outcomes, and there are some bonus exercises to complete as well.
+
+At the end of the tutorial, you will be ready to use Workbench to update nodes and media in your own Islandora repository.
 
 ## Prerequisites
 
@@ -55,11 +57,11 @@ google_sheets_gid: 1016713769
 
 Save the config file in your islandora_workbench directory as "tutorial_exercise_1_2.yml". Note that your worksheet will have its own "gid" in the URL. You will need to register that value in your config file's `google_sheets_gid` setting. Once your config file is ready, run:
 
-`./workbench --config tutorial_exercise_1.yml --check`
+`./workbench --config tutorial_exercise_1_2.yml --check`
 
 Then, if `--check` didn't report anything important, run:
 
-`./workbench --config tutorial_exercise_1.yml`
+`./workbench --config tutorial_exercise_1_2.yml`
 
 
 ### 2. Adding more columns to your CSV file
