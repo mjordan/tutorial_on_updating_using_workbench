@@ -93,7 +93,7 @@ media_type: image
 google_sheets_gid: 609339107
 ```
 
-## Bonus on your own (or with a partner) exercises
+## Bonus on-your-own (or with-a-partner) exercises
 
 1. Create a collection node (manually, via Drupal's admin GUI is probably easiest) and use Workbench to add some existing nodes to it. Hint: the member nodes need to have the collection's node ID in their `field_member_of`.
 1. Use Workbench to set the publication status of a couple of nodes to unpublished. Hint: the column in your CSV should be named `published`, which takes either a `1` or `0` value.
