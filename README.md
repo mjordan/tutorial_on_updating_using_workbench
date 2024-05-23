@@ -71,10 +71,10 @@ Then, if `--check` didn't report anything important, run:
 
 The values in your worksheet should have replaced the original values in the respective node fields. This is because the default `update_mode` is "replace", telling Workbench to replace whatever values are in the node fields with the values in the CSV data.
 
-### Exercuse 2: Appending your own values to node fields
+### Exercuse 2: Appending values to node fields
 
 > [!NOTE]
-> Learning outcome of this exercise: Appending values to existing fields rather than replace field values.
+> Learning outcome of this exercise: Appending values to existing fields rather than replacing field values.
 
 Now let's append values to fields rather than replace the values. In each row of your CSV, replace the contents of the `field_subject_general` column with a subject heading of your own, prepending the subject heading with "subject:" to tell Workbench which vocabulary to add the new value to.
 
@@ -83,7 +83,7 @@ Then, add `update_mode: append` to our configuration file. This overrides the de
 Rerun `./workbench --config tutorial_exercise_1_2.yml --check`, and if no major problems are reported, `./workbench --config tutorial_exercise_1_2.yml`.
 
 
-### Exercise 3. Adding values to fields
+### Exercise 3. Adding values to node fields
 
 > [!NOTE]
 > Learning outcomes of this exercise: Inserting new columns to your worksheet, adding their contents to your nodes.
