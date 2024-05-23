@@ -17,7 +17,7 @@ Sample data, and instances of Islandora, will be provided.
 
 The input CSV we will use is a Google Sheet whose URL appears in all of the configuration files below. Within the Google Sheet, specific worksheets are identifed in the configuration files by using the `google_sheets_gid` setting.
 
-The "file" column in each worksheet points to an image in this Github repo's `files` directory. In addition to the image files that will end up as "Original file" media on the nodes we will create and update, the directory contains a thumbnail image, which we will use in exercise 3.
+The "file" column in each worksheet points to an image in this Github repo's `files` directory. In addition to the image files that will end up as "Original file" media on the nodes we will create and update, the directory contains a thumbnail image, which we will use in exercise 4.
 
 ## Setup
 
@@ -71,7 +71,7 @@ Then, if `--check` didn't report anything important, run:
 
 The values in your worksheet should have replaced the original values in the respective node fields. This is because the default `update_mode` is "replace", telling Workbench to replace whatever values are in the node fields with the values in the CSV data.
 
-### Exercuse 2: Appending values to node fields
+### Exercise 2: Appending values to node fields
 
 > [!NOTE]
 > Learning outcome of this exercise: Appending values to existing fields rather than replacing field values.
@@ -83,7 +83,7 @@ Then, add `update_mode: append` to our configuration file. This overrides the de
 Rerun `./workbench --config tutorial_update.yml --check`, and if no major problems are reported, `./workbench --config tutorial_update.yml`.
 
 
-### Exercise 3. Adding values to node fields
+### Exercise 3. Populating empty fields
 
 > [!NOTE]
 > Learning outcomes of this exercise: Inserting new columns to your worksheet, adding their contents to your nodes.
@@ -92,7 +92,7 @@ To start this exercise, we will look at the field structure of the Repository It
 
 Since you are working in your own worksheet, you don't need to modify your configuration file. All you need to do is run `./workbench --config tutorial_update.yml --check`, and then, if no major problems are reported, `./workbench --config tutorial_update.yml`.
 
-### 3. Replacing files
+### Exercise 4. Replacing files
 
 > [!NOTE]
 > Learning outcome of this exercise: Replace some thumbnail files.
@@ -116,7 +116,7 @@ media_type: image
 google_sheets_gid: 609339107
 ```
 
-Save your configuration file and run `./workench --config tutorial_exercise_replace_thumbnails.yml --check`, and if no major problems are reported, then run `./workench --config tutorial_exercise_replace_thumbnails.yml`. Do a search on your Drupal website for "cats" and you will see the new thumbnail image for the two nodes about cats.
+Save your configuration file and run `./workbench --config tutorial_exercise_replace_thumbnails.yml --check`, and if no major problems are reported, then run `./workench --config tutorial_exercise_replace_thumbnails.yml`. Do a search on your Drupal website for "cats" and you will see the new thumbnail image for the two nodes about cats.
 
 Note that we are only replacing the file, not the entire media. This file remains a "thumbnail" image due to its media having that Islandora Media Use value. If we wanted to add a thumbnail media to a node that didn't have one, we would use a `add_media` task.
 
