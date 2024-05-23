@@ -42,7 +42,7 @@ If `--check` doesn't identify any significant issues, rerun Workbench without th
 
 ## Follow-along exercises
 
-### 1. Updating node fields
+### Exersise 1. Replacing values in node fields
 
 > [!NOTE]
 > Learning outcomes of this exercise: 1) using the `google_sheets_gid` config setting, and 2) running a simple `update` task using provided CSV values.
@@ -69,17 +69,28 @@ Then, if `--check` didn't report anything important, run:
 
 `./workbench --config tutorial_exercise_1_2.yml`
 
+The values in your worksheet should have replaced the original values in the respective node fields. This is because the default `update_mode` is "replace", telling Workbench to replace whatever values are in the node fields with the values in the CSV data.
 
-### 2. Adding more columns to your CSV file
+### Exercuse 2: Appending your own values to node fields
 
 > [!NOTE]
-> Learning outcomes of this exercise: Building on the last exercise, you will 1) provide the metadata to be added to your nodes and 2) append values to existing fields rather than replace field values.
+> Learning outcome of this exercise: Appending values to existing fields rather than replace field values.
+
+Now let's append values to fields rather than replace the values. In each row of your CSV, replace the contents of the `field_subject_general` column with a subject heading of your own, prepending the subject heading with "subject:" to tell Workbench which vocabulary to add the new value to.
+
+Then, add `update_mode: append` to our configuration file. This overrides the default value of `update_mode` ("replace"), telling Workbench to append the values in the CSV file to the values existing in the respective node fields.
+
+Rerun `./workbench --config tutorial_exercise_1_2.yml --check`, and if no major problems are reported, `./workbench --config tutorial_exercise_1_2.yml`.
+
+
+### Exercise 3. Adding values to fields
+
+> [!NOTE]
+> Learning outcomes of this exercise: Inserting new columns to your worksheet, adding their contents to your nodes.
 
 To start this exercise, we will look at the field structure of the Repository Item content type together, and then you will add some new columns to your worksheet and update your nodes using your own metadata values. The "Manage Fields" list for the Repository Item content type is at `/admin/structure/types/manage/islandora_object/fields`.
 
-For this exercise, let's append values to fields rather than replace the values. To do this, we need to add `update_mode: append` to our configuration files.
-
-Since you are working in your own worksheet, you don't need to modify your configuration file. All you need to do is run `./workbench --config tutorial_exercise_1_2.yml --check`.
+Since you are working in your own worksheet, you don't need to modify your configuration file. All you need to do is run `./workbench --config tutorial_exercise_1_2.yml --check`, and then, if no major problems are reported, `./workbench --config tutorial_exercise_1_2.yml`.
 
 ### 3. Replacing files
 
