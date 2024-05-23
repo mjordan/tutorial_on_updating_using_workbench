@@ -90,7 +90,7 @@ Rerun `./workbench --config tutorial_update.yml --check`, and if no major proble
 
 To start this exercise, we will look at the field structure of the Repository Item content type together, and then you will add some new columns to your worksheet and update your nodes using your own metadata values. The "Manage Fields" list for the Repository Item content type is at `/admin/structure/types/manage/islandora_object/fields`.
 
-Since you are working in your own worksheet, you don't need to modify your configuration file. All you need to do is run `./workbench --config tutorial_update.yml --check`, and then, if no major problems are reported, `./workbench --config tutorial_update.yml`.
+Since you are using the same worksheet as in the previous exercises and the `update_mode` setting can remain as "append", you don't need to modify your configuration file. All you need to do is run `./workbench --config tutorial_update.yml --check`, and then, if no major problems are reported, `./workbench --config tutorial_update.yml`.
 
 ### Exercise 4. Replacing files
 
@@ -116,7 +116,7 @@ media_type: image
 google_sheets_gid: 609339107
 ```
 
-Save your configuration file and run `./workbench --config tutorial_exercise_replace_thumbnails.yml --check`, and if no major problems are reported, then run `./workench --config tutorial_exercise_replace_thumbnails.yml`. Do a search on your Drupal website for "cats" and you will see the new thumbnail image for the two nodes about cats.
+Save your configuration file and run `./workbench --config tutorial_exercise_replace_thumbnails.yml --check`, and if no major problems are reported, then run `./workbench --config tutorial_exercise_replace_thumbnails.yml`. Do a search on your Drupal website for "cats" and you will see the new thumbnail image for the two nodes about cats.
 
 Note that we are only replacing the file, not the entire media. This file remains a "thumbnail" image due to its media having that Islandora Media Use value. If we wanted to add a thumbnail media to a node that didn't have one, we would use a `add_media` task.
 
