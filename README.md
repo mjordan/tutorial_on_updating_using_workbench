@@ -13,6 +13,12 @@ At the end of the tutorial, you will be ready to use Workbench to update nodes a
 
 Sample data, and instances of Islandora, will be provided.
 
+## A note about the sample data
+
+The input CSV we will use is a Google Sheet whose URL appears in all of the configuration files below. Within the Google Sheet, specific worksheets are identifed in the configuration files by using the `google_sheets_gid` setting.
+
+The "file" column in each worksheet points to an image in this Github repo's `files` directory. In addition to the image files that will end up as "Original file" media on the nodes we will create and update, the directory contains a thumbnail image, which we will use in exercise 3.
+
 ## Setup
 
 Before we start practicing updates to content, we need to create some nodes and media we will later update.
@@ -32,7 +38,7 @@ google_sheets_gid: 0
 
 Then, run Workbench using this configuration file: `./workbench --config tutorial_create.yml --check`
 
-If `--check` doesn't identify any significant issues, rerun Workbench without the `--check` option.
+If `--check` doesn't identify any significant issues, rerun Workbench without the `--check` option. Workbench should create six nodes and accompanying media.
 
 ## Follow-along exercises
 
