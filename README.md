@@ -9,15 +9,18 @@ At the end of the tutorial, you will be ready to use Workbench to update nodes a
 ## Prerequisites
 
 - some experience using Islandora Workbench (doesn't matter what type of tasks) - important thing is that you know what configuration files are, what `--check` does, and that you're comfortable with the command line
+- the ability to create and edit Workbench confguration files - any text editor will suffice
 - a working installation of Islandora Workbench on your computer (the more recent the better)
 
 Sample data, and instances of Islandora, will be provided.
 
-## A note about the sample data
+## A note about the sample data and configuration files
 
 The input CSV we will use is a shared Google Sheet whose URL appears in all of the configuration files below. Within the Google Sheet, specific worksheets are identifed in the configuration files by using the `google_sheets_gid` setting.
 
 The "file" column in each worksheet points to an image in this Github repo's `images` directory. In addition to the image files that will end up as "Original file" media on the nodes we will create and update, the directory contains a thumbnail image, which we will use in exercise 4.
+
+You will not need to clone this Github repo to participate in the tutorial. Copying the sample configuration files, and in a couple cases editing them slightly, is all that is required.
 
 ## Setup
 
