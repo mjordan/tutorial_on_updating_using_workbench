@@ -61,13 +61,13 @@ allow_adding_terms: true
 google_sheets_gid: 1016713769
 ```
 
-Save the config file in your islandora_workbench directory as "tutorial_exercise_1_2.yml". Note that your worksheet will have its own "gid" in the URL. You will need to register that value in your config file's `google_sheets_gid` setting. Once your config file is ready, run:
+Save the config file in your islandora_workbench directory as "tutorial_update.yml". Note that your worksheet will have its own "gid" in the URL. You will need to register that value in your config file's `google_sheets_gid` setting. Once your config file is ready, run:
 
-`./workbench --config tutorial_exercise_1_2.yml --check`
+`./workbench --config tutorial_update.yml --check`
 
 Then, if `--check` didn't report anything important, run:
 
-`./workbench --config tutorial_exercise_1_2.yml`
+`./workbench --config tutorial_update.yml`
 
 The values in your worksheet should have replaced the original values in the respective node fields. This is because the default `update_mode` is "replace", telling Workbench to replace whatever values are in the node fields with the values in the CSV data.
 
@@ -80,7 +80,7 @@ Now let's append values to fields rather than replace the values. In each row of
 
 Then, add `update_mode: append` to our configuration file. This overrides the default value of `update_mode` ("replace"), telling Workbench to append the values in the CSV file to the values existing in the respective node fields.
 
-Rerun `./workbench --config tutorial_exercise_1_2.yml --check`, and if no major problems are reported, `./workbench --config tutorial_exercise_1_2.yml`.
+Rerun `./workbench --config tutorial_update.yml --check`, and if no major problems are reported, `./workbench --config tutorial_update.yml`.
 
 
 ### Exercise 3. Adding values to node fields
@@ -90,7 +90,7 @@ Rerun `./workbench --config tutorial_exercise_1_2.yml --check`, and if no major 
 
 To start this exercise, we will look at the field structure of the Repository Item content type together, and then you will add some new columns to your worksheet and update your nodes using your own metadata values. The "Manage Fields" list for the Repository Item content type is at `/admin/structure/types/manage/islandora_object/fields`.
 
-Since you are working in your own worksheet, you don't need to modify your configuration file. All you need to do is run `./workbench --config tutorial_exercise_1_2.yml --check`, and then, if no major problems are reported, `./workbench --config tutorial_exercise_1_2.yml`.
+Since you are working in your own worksheet, you don't need to modify your configuration file. All you need to do is run `./workbench --config tutorial_update.yml --check`, and then, if no major problems are reported, `./workbench --config tutorial_update.yml`.
 
 ### 3. Replacing files
 
@@ -115,6 +115,8 @@ media_type: image
 # We should all use the same GID for this exercise.
 google_sheets_gid: 609339107
 ```
+
+Save your configuration file and run `./workench --config tutorial_exercise_replace_thumbnails.yml --check`, and if no major problems are reported, then run `./workench --config tutorial_exercise_replace_thumbnails.yml`. Do a search on your Drupal website for "cats" and you will see the new thumbnail image for the two nodes about cats.
 
 Note that we are only replacing the file, not the entire media. This file remains a "thumbnail" image due to its media having that Islandora Media Use value. If we wanted to add a thumbnail media to a node that didn't have one, we would use a `add_media` task.
 
