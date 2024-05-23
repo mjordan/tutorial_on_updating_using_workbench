@@ -40,9 +40,9 @@ Then, run Workbench using this configuration file: `./workbench --config tutoria
 
 If `--check` doesn't identify any significant issues, rerun Workbench without the `--check` option. Workbench should create six nodes and accompanying media.
 
-## Follow-along exercises
+## Guided exercises
 
-### Exersise 1. Replacing values in node fields
+### Exercise 1. Replacing values in node fields
 
 > [!NOTE]
 > Learning outcomes of this exercise: 1) using the `google_sheets_gid` config setting, and 2) running a simple `update` task using provided CSV values.
@@ -120,7 +120,7 @@ Save your configuration file and run `./workench --config tutorial_exercise_repl
 
 Note that we are only replacing the file, not the entire media. This file remains a "thumbnail" image due to its media having that Islandora Media Use value. If we wanted to add a thumbnail media to a node that didn't have one, we would use a `add_media` task.
 
-## Bonus on-your-own (or with-a-partner) exercises
+## On-your-own (or with-a-partner) exercises
 
 1. Create a collection node (manually, via Drupal's admin GUI is probably easiest) and use Workbench to add some existing nodes to it. Hint: the member nodes need to have the collection's node ID in their `field_member_of`.
 1. Use Workbench to set the publication status of a couple of nodes to unpublished. Hint: the column in your CSV should be named `published`, which takes either a `1` (published) or `0` (unpublished) value.
