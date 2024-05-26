@@ -50,7 +50,11 @@ If `--check` doesn't identify any significant issues, rerun Workbench without th
 > [!NOTE]
 > Learning outcomes of this exercise: 1) using the `google_sheets_gid` config setting, and 2) running a simple `update` task using provided CSV values.
 
-First, duplicate the "update task" worksheet in the shared Google Sheet, labeling it with your initials or name. You will use this worksheet as the input for running the following `update` task. Your config file will be based on this template (with your `host`, `username`, and `password` instead of the values below):
+1. Duplicate the "update task" worksheet in the shared Google Sheet, labeling it with your initials or name.
+2. Update the values in the `node_id` column of your duplicated worksheet to match the node IDs of the items you created above.
+3. note the value of the `gid` parameter in the URL of your worksheet. You will need to add to `google_sheets_gid` setting in your Workbench config file.
+
+You will use this worksheet as the input for running the following `update` task. Your config file will be based on this template (with your `host`, `username`, `password`, and `google_sheets_gid` instead of the values below):
 
 ```
 task: update
