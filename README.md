@@ -96,7 +96,12 @@ Rerun `./workbench --config tutorial_update.yml --check`, and if no major proble
 > [!NOTE]
 > Learning outcome of this exercise: Inserting new columns to your worksheet, thereby adding the CSV data to your nodes.
 
-To start this exercise, we will look at the field structure of the "Repository Item" content type together, and then you will add some new columns to your worksheet and update your nodes using your own metadata values. The "Manage Fields" list for the "Repository Item" content type is at `/admin/structure/types/manage/islandora_object/fields`.
+To start this exercise, 
+
+1. Look at the field structure of the "Repository Item" content type using the "Manage Fields" list for the "Repository Item" content type at `/admin/structure/types/manage/islandora_object/fields`.
+2. Choose a field and add its machine name to your Google CSV workbsheet.
+3. Comment out the `title`, `field_subject_general`, and `field_coordinates` headers with a pound sign (`#`) to tell Workbnech to ignore them (so the headers look like `#title`, `#field_subject_general`, and `#field_coordinates`).
+4. Populate the new column with metadata values.
 
 Since you are using the same worksheet as in the previous exercises and the `update_mode` setting can remain as "append", you don't need to modify your configuration file. All you need to do is run `./workbench --config tutorial_update.yml --check`, and then, if no major problems are reported, `./workbench --config tutorial_update.yml`.
 
