@@ -86,7 +86,7 @@ The values in your worksheet should have replaced the original values in the res
 Now let's append values to data in fields rather than replace the values.
 
 1. In each row of your CSV, replace the contents of the `field_subject_general` column with a subject heading of your own, prepending the subject heading with "subject:" to tell Workbench which vocabulary to add the new value to.
-2. Add `update_mode: append` to our configuration file. This overrides the default value of `update_mode` ("replace"), telling Workbench to append the values in the CSV file to the values existing in the respective node fields.
+2. Add `update_mode: append` to your configuration file (same on you used in exercise 1). This overrides the default value of `update_mode` ("replace"), telling Workbench to append the values in the CSV file to the values existing in the respective node fields.
 
 Rerun `./workbench --config tutorial_update.yml --check`, and if no major problems are reported, `./workbench --config tutorial_update.yml`.
 
