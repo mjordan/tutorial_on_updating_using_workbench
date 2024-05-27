@@ -29,10 +29,11 @@ Before we start practicing updates to content, we need to create some nodes and 
 Copy the following configuration file and save it in your "islandora_workbench" directory with the name "tutorial_create.yml". You may need to change the `host`, `username`, and `password` settings.
 
 ```
-task: create
 host: https://islandora.traefik.me
 username: admin
 password: password
+
+task: create
 input_csv: https://docs.google.com/spreadsheets/d/1nFwY-y5w0ljyvf510r4zX-ATnD7Oso3DhKERdblhcSY/edit?usp=sharing
 allow_adding_terms: true
 google_sheets_gid: 0
@@ -51,16 +52,16 @@ If `--check` doesn't identify any significant issues, rerun Workbench without th
 
 1. Duplicate the "update task" worksheet in the shared Google Sheet, renaming it so it includes "update" and your initials.
 2. Update the values in the `node_id` column of your duplicated worksheet to match the node IDs of the items you created above.
-3. note the value of the `gid` parameter in the URL of your worksheet. You will need to add to `google_sheets_gid` setting in your Workbench config file.
+3. Note the value of the `gid` parameter in the URL of your worksheet. You will need to add to `google_sheets_gid` setting in your Workbench config file.
 
 You will use this worksheet as the input for running the following `update` task. Your config file will be based on this template (with your `host`, `username`, `password`, and `google_sheets_gid` instead of the values below):
 
 ```
-task: update
 host: https://islandora.traefik.me
 username: admin
 password: password
 
+task: update
 input_csv: https://docs.google.com/spreadsheets/d/1nFwY-y5w0ljyvf510r4zX-ATnD7Oso3DhKERdblhcSY/edit
 allow_adding_terms: true
 
@@ -120,11 +121,11 @@ Updating content not only involves updating node field data, it can also involve
 4. Save the following config file in your islandora_workbench directory as "tutorial_exercise_replace_thumbnails.yml" (with your own `host`, `username`, and `password` values):
 
 ```
-task: update_media
 host: https://islandora.traefik.me
 username: admin
 password: password
 
+task: update_media
 input_csv: https://docs.google.com/spreadsheets/d/1nFwY-y5w0ljyvf510r4zX-ATnD7Oso3DhKERdblhcSY/edit?usp=sharing
 media_type: image
 
