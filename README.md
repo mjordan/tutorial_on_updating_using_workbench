@@ -34,7 +34,6 @@ host: https://islandora.traefik.me
 username: admin
 password: password
 input_csv: https://docs.google.com/spreadsheets/d/1nFwY-y5w0ljyvf510r4zX-ATnD7Oso3DhKERdblhcSY/edit?usp=sharing
-standalone_media_url: true
 allow_adding_terms: true
 google_sheets_gid: 0
 ```
@@ -127,7 +126,6 @@ username: admin
 password: password
 
 input_csv: https://docs.google.com/spreadsheets/d/1nFwY-y5w0ljyvf510r4zX-ATnD7Oso3DhKERdblhcSY/edit?usp=sharing
-standalone_media_url: true
 media_type: image
 
 # Replace with the gid of your "replace files" worksheet.
