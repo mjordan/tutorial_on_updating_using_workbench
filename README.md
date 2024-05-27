@@ -117,7 +117,7 @@ Updating content not only involves updating node field data, it can also involve
 
 1. Before we run Workbench, perform a search on your Drupal website for "cats" and note that the thumbnail images are derived from the original files used when we created the nodes and media.
 2. Duplicate the "update task" worksheet in the shared Google Sheet, renaming it so it includes "replace file" and your initials.
-3. Find the media IDs of the two thumbnail media whose file you want to replace.
+3. Find the media IDs of the two thumbnail media whose file you want to replace and update your worksheet's `media_id` column with them.
 4. Save the following config file in your islandora_workbench directory as "tutorial_exercise_replace_thumbnails.yml" (with your own `host`, `username`, and `password` values):
 
 ```
