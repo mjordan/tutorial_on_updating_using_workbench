@@ -133,7 +133,7 @@ media_type: image
 google_sheets_gid: 609339107
 ```
 
-Save your configuration file and run `./workbench --config tutorial_exercise_replace_thumbnails.yml --check`, and if no major problems are reported, then run `./workbench --config tutorial_exercise_replace_thumbnails.yml`.
+Save your configuration file in your Workbench directory as "tutorial_replace_thumbnails.yml" and run `./workbench --config tutorial_replace_thumbnails.yml --check`, and if no major problems are reported, then run `./workbench --config tutorial_replace_thumbnails.yml`.
 
 To see the new thumbnails, rerun you search for "cats".
 
