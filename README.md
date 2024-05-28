@@ -50,7 +50,7 @@ If `--check` doesn't identify any significant issues, rerun Workbench without th
 > [!NOTE]
 > Learning outcomes of this exercise: 1) using the `google_sheets_gid` config setting, and 2) running a simple `update` task using provided CSV values.
 
-1. Duplicate the "update task" worksheet in the shared Google Sheet, renaming it so it includes "update" and your initials.
+1. Find the "update task" worksheet in the shared Google Sheet that has your Islandora number on it.
 2. Update the values in the `node_id` column of your duplicated worksheet to match the node IDs of the items you created above.
 3. Note the value of the `gid` parameter in the URL of your worksheet. You will need to add to `google_sheets_gid` setting in your Workbench config file.
 
@@ -116,7 +116,7 @@ Updating content not only involves updating node field data, it can also involve
 ![Pictures of several kinds of cats](https://raw.githubusercontent.com/mjordan/tutorial_on_updating_using_workbench/main/images/cats_tn.jpg)
 
 1. Before we run Workbench, perform a search on your Drupal website for "cats" and note that the thumbnail images are derived from the original files used when we created the nodes and media.
-2. Duplicate the "update task" worksheet in the shared Google Sheet, renaming it so it includes "replace file" and your initials.
+2. Find the "replace file" worksheet in the shared Google Sheet that has your Islandora number on it
 3. Find the media IDs of the two thumbnail media whose file you want to replace and update your worksheet's `media_id` column with them.
 4. Save the following config file in your islandora_workbench directory as "tutorial_exercise_replace_thumbnails.yml" (with your own `host`, `username`, and `password` values):
 
